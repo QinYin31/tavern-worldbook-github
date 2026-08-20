@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content" />
+    <meta name="theme-color" content="#111312" />
+    <link rel="icon" type="image/jpeg" href="/assets/shennv-cover.jpg" />
+    <title>书页驿站 · 原文锚定穿书</title>
+  </head>
+  <body>
+    <div id="root">
+      <section id="file-protocol-notice" hidden style="max-width:560px;margin:12vh auto;padding:28px;border:1px solid #39414d;border-radius:12px;background:#171b21;color:#f3efe8;font:15px/1.7 system-ui,'Microsoft YaHei',sans-serif">
+        <div style="color:#efb77b;font-size:12px;letter-spacing:.08em">书页驿站</div>
+        <h1 style="margin:8px 0 12px;font-size:24px">请通过本地服务打开</h1>
+        <p style="margin:0;color:#b6bdc8">不要直接双击 <code>index.html</code>。请双击同目录的 <code>启动书页驿站.cmd</code>，再在浏览器中打开 <code>http://127.0.0.1:8787</code>。</p>
+      </section>
+    </div>
+    <script>
+      if (window.location.protocol === "file:") {
+        document.getElementById("file-protocol-notice").hidden = false;
+      }
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

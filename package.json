@@ -1,0 +1,31 @@
+{
+    "name": "tavern-worldbook",
+    "private": false,
+    "version": "0.1.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc -b && vite build",
+        "start": "node server.mjs",
+        "test": "vitest run"
+    },
+    "dependencies": {
+        "@vitejs/plugin-react": "latest",
+        "lucide-react": "latest",
+        "react": "latest",
+        "react-dom": "latest",
+        "vite": "latest"
+    },
+    "devDependencies": {
+        "@types/node": "^26.2.0",
+        "@types/react": "latest",
+        "@types/react-dom": "latest",
+        "puppeteer-core": "^25.6.0",
+        "typescript": "latest",
+        "vitest": "latest"
+    },
+    "allowScripts": {
+        "tsx@4.23.12": true,
+        "@types/node@26.2.0": true
+    }
+}
