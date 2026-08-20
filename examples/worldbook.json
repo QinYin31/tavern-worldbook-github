@@ -1,0 +1,58 @@
+{
+  "format": "tavern-worldbook/v1",
+  "meta": {
+    "title": "作品名",
+    "author": "作者名",
+    "source": "来源或版本",
+    "canonVersion": "v1.0",
+    "summary": "作品和当前穿书切入点的简短摘要。"
+  },
+  "world": {
+    "era": "时代背景",
+    "setting": "主要地点与社会结构",
+    "rules": ["世界中不可随意违反的规则"],
+    "glossary": { "术语": "解释" }
+  },
+  "characters": [
+    {
+      "id": "character_main",
+      "name": "角色名",
+      "aliases": ["别名"],
+      "role": "身份和在故事中的位置",
+      "age": 25,
+      "adult": true,
+      "traits": ["核心性格", "矛盾点"],
+      "goals": ["当前目标"],
+      "fears": ["恐惧或软肋"],
+      "voice": "说话习惯、节奏和常用表达",
+      "knowledge": ["角色知道的事实"],
+      "unknowns": ["角色不知道的事实"],
+      "boundaries": ["不会做什么，关系如何变化"],
+      "relationships": {}
+    }
+  ],
+  "factions": [],
+  "locations": [],
+  "items": [],
+  "timeline": [],
+  "lorebook": [
+    {
+      "id": "lore_1",
+      "title": "人设底线",
+      "keys": ["关系", "攻略"],
+      "content": "角色只按自身动机行动，亲密关系需要事件和长期互动支撑。",
+      "priority": 100,
+      "alwaysActive": true
+    }
+  ],
+  "openingScene": {
+    "chapter": "第一章",
+    "location": "开场地点",
+    "time": "时间",
+    "weather": "天气",
+    "atmosphere": "气氛",
+    "objective": "当前目标",
+    "activeCharacters": ["character_main"],
+    "lastEvent": "刚刚发生的事件"
+  }
+}
